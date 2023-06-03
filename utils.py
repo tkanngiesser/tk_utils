@@ -1,7 +1,9 @@
 import pprint
 import torch
   
-def p_print(text): pp.pprint(text)
+def p_print(text): 
+  pp = pprint.PrettyPrinter(indent=4)
+  pp.pprint(text)
 
 def get_device_info():
   # get index of currently selected device
